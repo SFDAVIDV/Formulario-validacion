@@ -24,6 +24,7 @@ body {
   justify-content: center;
   align-content: center;
   gap: 10px;
+  padding-left: 25px;
   width: 450px;
   height: 550px;
   border: solid 4px #fff2f2;
