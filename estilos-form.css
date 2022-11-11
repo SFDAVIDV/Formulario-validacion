@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e3e5e6;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e3e5e6;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  width: 450px;
+  height: 550px;
+  border: solid 4px #fff2f2;
+  box-shadow: 10px 10px 30px #f3f3f3, -10px -10px 30px #f3f3f3;
+}
+
+.grupo__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 15px;
+  padding: 10px 5px;
+}
+
+.grupo__formulario .grupo__formulario-usuario label,
+.grupo__formulario .grupo__formulario-password label {
+  display: block;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.grupo__formulario .grupo__formulario-usuario .usuario-correcto,
+.grupo__formulario .grupo__formulario-password .password-correcto {
+  color: #22a414;
+  font-weight: bold;
+}
+
+.grupo__formulario .grupo__formulario-usuario .usuario-incorrecto,
+.grupo__formulario .grupo__formulario-password .password-incorrecto {
+  color: #f22244;
+  font-weight: bold;
+}
+
+.grupo__formulario .grupo__formulario-titulo {
+  height: 50px;
+}
+
+.grupo__formulario .grupo__formulario-titulo h2 {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.grupo__formulario .grupo__formulario-usuario input,
+.grupo__formulario .grupo__formulario-password input {
+  width: 80%;
+  height: 30px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #f8f8f8;
+}
+
+.grupo__formulario .grupo__formulario-usuario .input-correcto,
+.grupo__formulario .grupo__formulario-password .input-correcto {
+  border: solid 2px #22a414;
+}
+
+.grupo__formulario .grupo__formulario-usuario .input-incorrecto,
+.grupo__formulario .grupo__formulario-password .input-incorrecto {
+  border: solid 2px #f22244;
+}
+
+.grupo__formulario .grupo__formulario-usuario p,
+.grupo__formulario .grupo__formulario-password p {
+  display: none;
+}
+
+.grupo__formulario .grupo__formulario-usuario .mensaje-usuario-activo,
+.grupo__formulario .grupo__formulario-password .mensaje-password-activo {
+  display: block;
+}
+
+.grupo__formulario .grupo__formulario-boton .mensaje-error,
+.grupo__formulario .grupo__formulario-boton .mensaje-exito {
+  display: none;
+}
+
+.grupo__formulario .grupo__formulario-boton .mensaje-error-activo {
+  display: block;
+  background: #f22244;
+  color: #f4f5f6;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.grupo__formulario .grupo__formulario-boton .btn {
+  width: 60%;
+  height: 30px;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.5rem;
+  margin-left: 20%;
+  background: #000;
+  color: #f2f3f4;
+  cursor: pointer;
+}
+
+.grupo__formulario .grupo__formulario-boton .btn:hover {
+  box-shadow: 5px 5px 20px #a2a4a5;
+}
+
+.grupo__formulario .grupo__formulario-boton .mensaje-exito-activo {
+  display: block;
+  color: #f4f5f6;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 1.2em;
+  color: #22a414;
+}

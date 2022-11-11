@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos-form.css" />
+  </head>
+  <body>
+    <form class="formulario" id="formulario">
+      <section class="form-content">
+        <article class="grupo__formulario">
+          <div class="grupo__formulario-titulo">
+            <h2>Formulario</h2>
+          </div>
+        </article>
+        <article class="grupo__formulario">
+          <div class="grupo__formulario-usuario">
+            <label for="usuario" id="usuario-label">Usuario</label>
+            <input type="text" name="usuario" id="usuario" />
+            <p id="mensaje-usuario">
+              El usuario debe tener de 4 a 16 caracteres y solo puede tener
+              letras,numeros y guiones
+            </p>
+          </div>
+        </article>
+        <article class="grupo__formulario">
+          <div class="grupo__formulario-password">
+            <label for="password" id="password-label">Contraseña</label>
+            <input type="password" name="password" id="password" />
+            <p id="mensaje-password">
+              La contraseña debe tener de 4 a 16 caracteres
+            </p>
+          </div>
+        </article>
+        <article class="grupo__formulario">
+          <div class="grupo__formulario-boton">
+            <p class="mensaje-error" id="mensaje-error">
+              Error! No has llenado el formulario correctamente
+            </p>
+            <button type="submit" id="btn" class="btn">Enviar</button>
+            <p class="mensaje-exito" id="mensaje-exito">
+              Formulario enviado con exito
+            </p>
+          </div>
+        </article>
+      </section>
+    </form>
+    <script src="validar.js"></script>
+  </body>
+</html>
