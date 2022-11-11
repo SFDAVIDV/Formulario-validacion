@@ -23,9 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  gap: 10px;
-  padding-left: 25px;
-  width: 450px;
+  width: 320px;
   height: 550px;
   border: solid 4px #fff2f2;
   box-shadow: 10px 10px 30px #f3f3f3, -10px -10px 30px #f3f3f3;
@@ -43,7 +41,7 @@ body {
 .grupo__formulario .grupo__formulario-usuario label,
 .grupo__formulario .grupo__formulario-password label {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 5px;
 }
 
@@ -112,6 +110,7 @@ body {
   height: 40px;
   text-align: center;
   padding-top: 12px;
+  font-size: 0.7em;
 }
 
 .grupo__formulario .grupo__formulario-boton .btn {
@@ -137,4 +136,19 @@ body {
   padding-top: 12px;
   font-size: 1.2em;
   color: #22a414;
+}
+
+@media screen and (min-width: 700px) {
+  .form-content {
+    width: 450px;
+  }
+
+  .grupo__formulario .grupo__formulario-boton .mensaje-error-activo {
+    font-size: 1em;
+  }
+
+  .grupo__formulario .grupo__formulario-usuario label,
+  .grupo__formulario .grupo__formulario-password label {
+    font-size: 1.5em;
+  }
 }
